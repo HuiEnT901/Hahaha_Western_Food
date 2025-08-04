@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="menu.css" rel="stylesheet">
+    <title>- Menu -</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+        </div>
+        <div class="menu-icon" id="menuToggle">
+            <img src="three_lineIcon.png" alt="Menu Icon">
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="index.php">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+        <!-- Main Content Container -->
+    <div class="main-container">
+        <!-- Menu Sidebar -->
+        <aside class="menu-sidebar">
+            <ul>
+                <li class="active" data-category="chicken">Chicken</li>
+                <li data-category="pork">Pork</li>
+                <li data-category="fish">Fish</li>
+                <li data-category="pasta">Pasta</li>
+                <li data-category="pizza">Pizza</li>
+                <li data-category="burger">Burger</li>
+                <li data-category="snacks">Snacks</li>
+                <li data-category="desserts">Desserts</li>
+                <li data-category="beverages">Beverages</li>
+            </ul>
+        </aside>
+        <!-- Menu grid -->
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/signature-chicken-chop.jpg" alt="signature-chicken-chop">
+                    <h3>Signature Chicken Chop</h3>
+                    <p>RM 17.90</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/chicken-marryland.jpg" alt="chicken-marryland">
+                    <h3>Chicken Marryland</h3>
+                    <p>RM 18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                 <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/grilled-honey-bbq-chicken-chop.jpg" alt="grilled-honey-bbq-chicken-chop">
+                    <h3>Grilled Honey Bbq Chicken Chop</h3>
+                    <p>RM 18.90</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/grilled-chicken-german-sausage.jpg" alt="grilled-chicken-german-sausage">
+                    <h3>Grilled Chicken German Sausage</h3>
+                    <p>RM 20.10</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/chicken-cordon-blue.jpg" alt="chicken-cordon-blue">
+                    <h3>Chicken Cordon Bleu</h3>
+                    <p>RM 17.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                 <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/grilled-holand-chicken-chop.jpg" alt="grilled-holand-chicken-chop">
+                    <h3>Grilled Holand Chicken Chop</h3>
+                    <p>RM 16.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/mexico-chicken-roll.jpg" alt="mexico-chicken-roll">
+                    <h3>Mexico Chicken Roll 👍</h3>
+                    <p>RM 18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/prosciutto-and-mushroom-chicken.jpg" alt="prosciutto-and-mushroom-chicken">
+                    <h3>Prosciutto and Mushroom Chicken</h3>
+                    <p>RM 19.70</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="chicken">
+                    <img src="img/food/chicken/baked-chicken-with-whole-leg.jpg" alt="baked-chicken-with-whole-leg">
+                    <h3>Baked Chicken with Whole Leg</h3>
+                    <p>RM 18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                 <!-- pork -->
+                <div class="menu-card" data-category="pork">
+                    <img src="img/food/pork/signature-pork-chop.jpg" alt="signature-pork-chop">
+                    <h3>Signature Pork Chop</h3>
+                    <p>RM 20.20</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="menu-card" data-category="pork">
+                    <img src="img/food/pork/pork-marryland.jpg" alt="pork-marryland">
+                    <h3>Pork Marryland</h3>
+                    <p>RM21.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="pork">
+                    <img src="img/food/pork/grilled-holland-pork-chop.jpg" alt="grilled-holland-pork-chop">
+                    <h3>Grilled Holland Pork Chop</h3>
+                    <p>RM23.20</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="pork">
+                    <img src="img/food/pork/grilled-pork-german-sausage.jpg" alt="grilled-pork-german-sausage">
+                    <h3>Grilled Pork German Sausage</h3>
+                    <p>RM25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="pork">
+                    <img src="img/food/pork/grilled-black-pepper-pork-chop.jpg" alt="grilled-black-pepper-pork-chop">
+                    <h3>Grilled Black Pepper Pork Chop</h3>
+                    <p>RM21.30</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="pork">
+                    <img src="img/food/pork/pork-cordon-bleu.jpg" alt="pork-cordon-bleu">
+                    <h3>Pork Cordon Bleu 👍</h3>
+                    <p>RM24.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                 <!-- fish -->
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/fish-and-chips.jpg" alt="fish-and-chips">
+                    <h3>Fish and Chips</h3>
+                    <p>RM17.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/fish-marryland.jpg" alt="fish-marryland">
+                    <h3>Fish Marryland</h3>
+                    <p>RM16.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/grilled-holand-fish.jpg" alt="grilled-holand-fish">
+                    <h3>Grilled Holand Fish 👍</h3>
+                    <p>RM17.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/grilled-garlic-fish.jpg" alt="grilled-garlic-fish">
+                    <h3>Grilled Garlic Fish</h3>
+                    <p>RM17.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/grilled-smoky-bbq-fish.jpg" alt="grilled-smoky-bbq-fish">
+                    <h3>Grilled Smoky Bbq Fish</h3>
+                    <p>RM18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/stuffed-fish.jpg" alt="stuffed-fish">
+                    <h3>Stuffed Fish</h3>
+                    <p>RM19.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/fish-parmigania.jpg" alt="fish-parmigania">
+                    <h3>Fish Parmigania</h3>
+                    <p>RM22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/grilled-salmon-steak.jpg" alt="grilled-salmon-steak">
+                    <h3>Grilled Salmon Steak</h3>
+                    <p>RM17.90</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+
+                <div class="menu-card" data-category="fish">
+                    <img src="img/food/fish/stuffed-fish.jpg" alt="stuffed-fish">
+                    <h3>Stuffed Fish</h3>
+                    <p>RM17.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- pasta -->
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/cabonara-chicken-and-mushroom-pasta.jpg" alt="cabonara-chicken-and-mushroom-pasta">
+                    <h3>Carbonara Chicken and Mushroom Pasta</h3>
+                    <p>RM20.80</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/cabonara-creamy-sauce-pasta.jpg" alt="cabonara-creamy-sauce-pasta">
+                    <h3>Carbonara Creamy Sauce Pasta</h3>
+                    <p>RM20.80</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/cabonara-creamy-sauce-pasta-with-seafood.jpg" alt="cabonara-creamy-sauce-pasta-with-seafood">
+                    <h3>Carbonara Creamy Sauce Pasta with Seafood</h3>
+                    <p>RM30.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+                
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/chicken-aglio-olio.jpg" alt="chicken-aglio-olio">
+                    <h3>Chicken Aglio Olio</h3>
+                    <p>RM22.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                 <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/chicken-bolognese.jpg" alt="chicken-bolognese">
+                    <h3>Chicken Bolognese</h3>
+                    <p>RM21.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/mussels-clams-aglio-olio.jpg" alt="mussels-clams-aglio-olio">
+                    <h3>Mussels Clams Aglio Olio</h3>
+                    <p>RM30.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/pesto-pasta-with-chicken.jpg" alt="pesto-pasta-with-chicken">
+                    <h3>Pesto Pasta with Chicken</h3>
+                    <p>RM20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/pesto-pasta-with-mussels-and-seafood.jpg" alt="pesto-pasta-with-mussels-and-seafood">
+                    <h3>Pesto Pasta with Mussels and Seafood 👍</h3>
+                    <p>RM30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/pesto-pasta-with-prawn.jpg" alt="pesto-pasta-with-prawn">
+                    <h3>Pesto Pasta with Prawn</h3>
+                    <p>RM23.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/prawn-aglio-olio.jpg" alt="prawn-aglio-olio">
+                    <h3>Prawn Aglio Olio</h3>
+                    <p>RM23.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/Ribeye-pasta-with-black-pepper.jpg" alt="Ribeye-pasta-with-black-pepper">
+                    <h3>Ribeye Pasta with Black Pepper </h3>
+                    <p>RM30.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+               
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/smoked-duck-aglio-olio.jpg" alt="smoked-duck-aglio-olio">
+                    <h3>Smoked Duck Aglio Olio</h3>
+                    <p>RM25.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+                
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/tomyam-pasta-with-prawn-and-chicken.jpg" alt="tomyam-pasta-with-prawn-and-chicken">
+                    <h3>Tomyam Pasta with Prawn and Chicken 👍</h3>
+                    <p>RM26.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="img/food/pasta/vegetarian-tomato-sauce-pasta.jpg" alt="vegetarian-tomato-sauce-pasta">
+                    <h3>Vegetarian Tomato Sauce Pasta</h3>
+                    <p>RM23.70</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+            
+            <!-- pizza --> 
+            <div class="menu-card" data-category="pizza">
+                    <img src="img/food/pizza/photo_6314315624586790442_x.jpg" alt="photo_6314315624586790442_x">
+                    <h3>Artisian Fired Pizza</h3>
+                    <p>RM27.70</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+                 <div class="menu-card" data-category="pizza">
+                    <img src="img/food/pizza/pepperoni-pizza.jpg" alt="pepperoni-pizza">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>RM26.70</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+            <div class="menu-card" data-category="pizza">
+                    <img src="img/food/pizza/bacon-and-cheese-pizza.jpg" alt="bacon-and-cheese">
+                    <h3>Bacon and Cheese Pizza</h3>
+                    <p>RM28.90</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+            <div class="menu-card" data-category="pizza">
+                    <img src="img/food/pizza/chickpea-pizza.jpg" alt="chickpea-pizza">
+                    <h3>Chickpea Pizza</h3>
+                    <p>RM28.90</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+            <div class="menu-card" data-category="pizza">
+                    <img src="img/food/pizza/fiery-chicken-and-mushroom-piza.jpg" alt="fiery-chicken-and-mushroom-piza">
+                    <h3>Fiery Chicken and Mushroom Pizza 👍</h3>
+                    <p>RM26.40</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+            <div class="menu-card" data-category="pizza">
+                    <img src="img/food/pizza/seafood-pizza.jpg" alt="seafood-pizza">
+                    <h3>Seafood Pizza 👍</h3>
+                    <p>RM30.10</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+                </div>
+
+            <!-- burger -->    
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/aloha-chicken-burger.jpg" alt="aloha-chicken-burger">
+                    <h3>Aloha Chicken Burger</h3>
+                    <p>RM18.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/backyard-bbq-pork-burger.jpg" alt="backyard-bbq-pork-burger">
+                    <h3>Backyard BBQ Pork Burger</h3>
+                    <p>RM24.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/bacon-buckaroo-burgers-with-bbq-caramelized-onions.jpg" alt="bacon-buckaroo-burgers-with-bbq-caramelized-onions">
+                    <h3>Bacon Burgers with Caramelized Onions</h3>
+                    <p>RM24.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/bbq-pork-buger.jpg" alt="bbq-pork-buger">
+                    <h3>BBQ Pork Buger</h3>
+                    <p>RM22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/grilled-beef-burger.jpg" alt="grilled-beef-burger">
+                    <h3>Grilled Beef Burger</h3>
+                    <p>RM22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/beef-with-double-cheese-burger.jpg" alt="beef-with-double-cheese-burger">
+                    <h3>Beef with Double Cheese Burger 👍</h3>
+                    <p>RM25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/double-beef-burger.jpg" alt="double-beef-burger">
+                    <h3>Double Beef Burger </h3>
+                    <p>RM25.90</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/big-bites-beef-burger.jpg" alt="big-bites-beef-burger">
+                    <h3>Big Bites Beef Burger</h3>
+                    <p>RM24.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/buffalo-chicken-burgers.jpg" alt="buffalo-chicken-burgers">
+                    <h3>Buffalo Chicken Burgers</h3>
+                    <p>RM24.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/classic-chicken-burger.jpg" alt="classic-chicken-burger">
+                    <h3>Classic Chicken Burger</h3>
+                    <p>RM18.90</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/gourmet-chicken-burger.jpg" alt="gourmet-chicken-burger">
+                    <h3>Gourmet Chicken Burger</h3>
+                    <p>RM19.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                    <img src="img/food/burger/hawaiian-teriyaki-chicken-burgers.jpg" alt="hawaiian-teriyaki-chicken-burgers">
+                    <h3>Hawaiian Teriyaki Chicken Burger 👍</h3>
+                    <p>RM20.40</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            
+            <!-- snacks -->
+
+             <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/cheesy-fries.jpg" alt="cheesy-fries">
+                    <h3>Cheesy Fries</h3>
+                    <p>RM6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/chicken-fingers.jpg" alt="chicken-fingers">
+                    <h3>Chicken Fingers</h3>
+                    <p>RM8.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/chicken-nuggets.jpg" alt="chicken-nuggets">
+                    <h3>Chicken Nuggets</h3>
+                    <p>RM8.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/chicken-wings-original.jpg" alt="chicken-wings-original">
+                    <h3>Chicken Wings Original (4/8 pcs) </h3>
+                    <p>RM7.80 / RM12.60</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/chicken-wings-spicy-korean-sauce.jpg" alt="chicken-wings-spicy-korean-sauce">
+                    <h3>Chicken Wings Spicy Korean Sauce (4/8 pcs) </h3>
+                    <p>RM8.80 / RM13.60</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/coleslaw.jpg" alt="coleslaw">
+                    <h3>Coleslaw</h3>
+                    <p>RM2.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/garlic-bread.jpg" alt="garlic-bread">
+                    <h3>Garlic Bread</h3>
+                    <p>RM1.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/mashed-potato.jpg" alt="mashed-potato">
+                    <h3>Mashed Potato</h3>
+                    <p>RM0.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/mini-hash-brown.jpg" alt="mini-hash-brown">
+                    <h3>Mini Hash Brown</h3>
+                    <p>RM5.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+             
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/mushroom-soup.jpg" alt="mushroom-soup">
+                    <h3>Mushroom Soup</h3>
+                    <p>RM5.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/sweet-potato.jpg" alt="sweet-potato">
+                    <h3>Sweet Potato</h3>
+                    <p>RM6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="snacks">
+                    <img src="img/food/snacks/twister-fries.jpg" alt="twister-fries">
+                    <h3>Twister Fries</h3>
+                    <p>RM6.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+             <!-- desserts -->
+              <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/berries-cheese-cake.jpg" alt="berries-cheese-cake">
+                    <h3>Berries Cheese Cake</h3>
+                    <p>RM8.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/orange-poppy-seed-chese-cake.jpg" alt="orange-poppy-seed-chese-cake">
+                    <h3>Orange Poppy Seed Cheese Cake</h3>
+                    <p>RM10.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            
+            <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/fuddy-chocolate-brownies.jpg" alt="fuddy-chocolate-brownies">
+                    <h3>Fuddy Chocolate Brownies</h3>
+                    <p>RM8.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+             <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/le-tiramisu.jpg" alt="le-tiramisu">
+                    <h3>Le Tiramisu</h3>
+                    <p>RM12.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/cranbery-ice-cream.jpg" alt="cranbery-ice-cream">
+                    <h3>Cranberry Ice Cream</h3>
+                    <p>RM6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/chocolate-strawberry-ice-cream.jpg" alt="chocolate-strawberry-ice-cream">
+                    <h3>Chocolate Strawberry Ice Cream</h3>
+                    <p>RM6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/gilded-caramel-sundae.jpg" alt="gilded-caramel-sundae">
+                    <h3>Gilded Caramel Sundae</h3>
+                    <p>RM8.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+             <div class="menu-card" data-category="desserts">
+                    <img src="img/food/dessert/classic-banana-split-ice-cream-sundae.jpg" alt="classic-banana-split-ice-cream-sundae">
+                    <h3>Classic Banana Split Ice Cream Sundae 👍</h3>
+                    <p>RM10.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+
+
+             <!-- desserts -->
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/apple-juice.jpg" alt="apple-juice">
+                    <h3>Apple Juice</h3>
+                    <p>RM5.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/carrot-juice.jpg" alt="carrot-juice">
+                    <h3>Carror Juice</h3>
+                    <p>RM5.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/honeydew-juice.jpg" alt="honeydew-juice">
+                    <h3>Honeydew Juice</h3>
+                    <p>RM5.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/honeydew-juice-with-milk.jpg" alt="honeydew-juice-with-milk">
+                    <h3>Honeydew Juice with Milk</h3>
+                    <p>RM6.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            
+             <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/orange-juice.jpg" alt="orange-juice">
+                    <h3>Orange juice</h3>
+                    <p>RM5.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/watermelon-juice.jpg" alt="watermelon-juice">
+                    <h3>Watermelon juice</h3>
+                    <p>RM6.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/lime-juice.jpg" alt="lime-juice">
+                    <h3>Lime juice</h3>
+                    <p>RM4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/iced-logan-juice.jpg" alt="iced-logan-juice">
+                    <h3>Longan juice</h3>
+                    <p>RM5.20</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/iced-lemon-tea.jpg" alt="iced-lemon-tea">
+                    <h3>Lemon Tea</h3>
+                    <p>RM4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+             <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/iced-honey-lemon.jpg" alt="iced-honey-lemon">
+                    <h3>Honey Lemon</h3>
+                    <p>RM4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/ice-chocolate.jpg" alt="iced-chocolate">
+                    <h3>Chocolate Drinks</h3>
+                    <p>RM4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/green-tea.jpg" alt="green-tea">
+                    <h3>Green Tea</h3>
+                    <p>RM3.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/black-coffee.jpg" alt="black-coffee">
+                    <h3>Black Coffee</h3>
+                    <p>RM3.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/cacppucino.jpg" alt="cacppucino">
+                    <h3>Cappuccino</h3>
+                    <p>RM8.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/caffe-latte.jpg" alt="caffe-latte">
+                    <h3>Caffe Latte</h3>
+                    <p>RM9.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/caffe-mocha.jpg" alt="caffe-mocha">
+                    <h3>Caffe Mocha</h3>
+                    <p>RM9.50</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+             <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/mineral-water.jpg" alt="mineral-water">
+                    <h3>Mineral Water</h3>
+                    <p>RM2.80</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/100 plus.jpg" alt="100.plus">
+                    <h3>100 Plus</h3>
+                    <p>RM3.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+            <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/coke.jpg" alt="coke">
+                    <h3>Coke</h3>
+                    <p>RM3.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+             <div class="menu-card" data-category="beverages">
+                    <img src="img/food/drinks/A&W-root-beer.jpg" alt="A&W-root-beer">
+                    <h3>A&W Root Beer</h3>
+                    <p>RM3.00</p>
+                    <button class="add-to-cart">Add to Cart</button>  
+            </div>
+
+
+
+            
+
+                <!-- Add more cards as needed -->
+            </div>
+
+    </div>
+
+        <!-- Floating cart with counter -->
+    <div class="floating-cart" id="floating-cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+
+<!-- Replace your current cart modal with this: -->
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Your Order</h2>
+    <div id="cart-items">
+      <!-- Cart items will appear here -->
+    </div>
+    <div id="cart-total">
+      <strong>Total: RM<span>0.00</span></strong>
+    </div>
+    <div class="table-number-section">
+        <label for="table-number">Table Number:</label>
+        <input type="number" id="table-number" min="1" required placeholder="Enter table number">
+        <div class="error-message" id="table-error" style="color:red; display:none;"></div>
+    </div>
+
+        <div class="cart-actions">
+            <button id="clear-all-btn" class="clear-all-btn">Clear All</button>
+            <button id="submit-order-btn" class="submit-order-btn">Submit Order</button>
+        </div>
+    </div>
+  </div>
+</div>
+    <script src="menu.js?v=1.0.126"></script>
+    <script>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    const dropdown = document.getElementById('dropdownMenu');
+    dropdown.classList.toggle('active');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('dropdownMenu');
+    const menuIcon = document.getElementById('menuToggle');
+    
+    if (!menuIcon.contains(event.target)) {
+        dropdown.classList.remove('active');
+    }
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - HAHAHA Western Food</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css?v=100">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="nav">
+    <!-- Brand Name -->
+    <div class="nav_brand">HAHAHA restaurant</div>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+        </div>
+        <div class="menu-icon" id="menuToggle">
+            <img src="three_lineIcon.png" alt="Menu Icon">
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="index.php">Login</a>
+            </div>
+        </div>
+    </nav>
+
+  
+
+
+  <!-- About Section -->
+  <main class="about_section">
+    <section class="about_us_container">
+      <h1>About HAHAHA Western Food</h1>
+      <p>Welcome to <strong>HAHAHA Western Food</strong> — your friendly neighborhood spot for hearty, satisfying Western cuisine with a local twist!</p>
+      <p>Established in 2025, HAHAHA Western Food was built on one simple idea: to bring people together with good food and lots of laughter.</p>
+      <p>Whether you're craving juicy burgers, crispy fries, creamy pastas, or our signature grilled chicken chop, we promise each dish is made with love, quality ingredients, and a dash of fun.</p>
+      <p>Come join us and taste the joy — because at HAHAHA Western Food, every bite brings happiness!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+      <div class="footer-container">
+        
+       <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><strong>Email:</strong> Hahaha@gmail.com</p>
+          <p><strong>Phone:</strong> +60 12-345 6789</p>
+          <p><strong>Address:</strong> 123 Foodie Street, Penang, Malaysia</p>
+           <p><strong>Instagram:</strong> HHHaaaFOodIe_666</p>
+
+        </div>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><img src="img/icon/facebook-icon.webp" alt="Facebook"></a>
+            <a href="#"><img src="img/icon/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="img/icon/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="img/icon/tiktok-icon.png" alt="TikTok"></a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 FoodieFav. All rights reserved.</p>
+      </div>
+    </footer>
+  <script>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    const dropdown = document.getElementById('dropdownMenu');
+    dropdown.classList.toggle('active');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('dropdownMenu');
+    const menuIcon = document.getElementById('menuToggle');
+    
+    if (!menuIcon.contains(event.target)) {
+        dropdown.classList.remove('active');
+    }
+});
+</script>
+</body>
+</html>

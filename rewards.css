@@ -1,0 +1,515 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+    background-color: #232323;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    margin-left:auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f15b2a;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f15b2a;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menu-icon {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: auto;
+}
+
+.menu-icon img {
+    height: 20px; /* Smaller icon */
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #232323;
+    border-radius: 4px;
+    padding: 10px 0;
+    width: 120px; /* Smaller width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none; /* Hidden by default */
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px; /* Smaller text */
+    transition: background-color 0.3s;
+}
+
+/* Show dropdown when active */
+.dropdown-menu.active {
+    display: block;
+}
+
+
+  header {
+    background-color: #8B4513;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: 3rem;;
+}
+
+  header p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+
+  header h1 {
+    margin: 0;
+  }
+  
+  section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+  
+  h2 {
+    color: #b22222;
+  }
+  
+  .rewards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .rewards-table th,
+  .rewards-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .rewards-table th {
+    background-color: #f4e1d2;
+  }
+
+#nav {
+    background-color: rgb(35, 35, 35);
+    color: rgb(154, 154, 154);
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 30px;
+}
+
+.nav_item li {
+    list-style: none;
+    text-decoration: none;
+    padding:0 20px;
+    position:relative ;
+}
+
+.nav_item li a {
+    text-decoration: none;
+    color:aliceblue;
+    transition: 0.3s ease;
+}
+
+.nav_item a:hover, .nav_item a.active {
+    color:rgb(154, 154, 154);
+    text-decoration: none;
+    transition: ease-in 0.3s;
+}
+
+.nav_item li a .active::after, 
+.nav_item li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(132, 133, 135);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: ease-in 0.3s;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+}
+
+.nav_links {
+    gap: 30px;
+    display: flex;
+    margin-left: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+  
+  
+  
+/* Modal Overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Content Box - Enhanced */
+/* Modal Content Box - Fixed Spacing */
+.modal-content {
+  background-color: #f9f5f0;
+  margin: 5vh auto; /* Use viewport units for better responsiveness */
+  padding: 35px 35px 25px; /* Reduced bottom padding */
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh; /* Reduced from 85vh to allow more margin */
+  position: relative;
+  box-shadow: 0 12px 30px rgba(139, 69, 19, 0.25);
+  border: 1px solid #e0d3c9;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensures rounded corners contain children */
+}
+
+/* Form Container with Safe Margins */
+.form-scroll-container {
+  overflow-y: auto;
+  padding: 0 10px 15px 0; /* Right padding for scrollbar */
+  margin-top: 15px;
+  flex-grow: 1;
+  max-height: calc(90vh - 180px); /* Accounts for header and button space */
+}
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 22px; /* Increased spacing */
+  position: relative;
+}
+
+.form-group label {
+  color: #5a4a42;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #d3c9bf;
+  border-radius: 10px; /* More rounded corners */
+  font-size: 1rem;
+  background-color: #fffdfb;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #b22222;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(178, 34, 34, 0.15);
+}
+
+/* Placeholder Styling */
+.form-group input::placeholder {
+  color: #b8b0a9;
+  font-style: italic;
+}
+
+/* Submit Button Enhancements */
+.btnn {
+  background: linear-gradient(135deg, #d2691e, #b22222);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 10px; /* Added bottom margin */
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(178, 34, 34, 0.2);
+  position: sticky;
+  overflow: hidden;
+  bottom: 0;
+}
+
+.btnn:hover {
+  background: linear-gradient(135deg, #b22222, #8b0000);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(178, 34, 34, 0.3);
+}
+
+.btnn:active {
+  transform: translateY(0);
+}
+
+/* Close Button Positioning */
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  color: #8B4513;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  color: #b22222;
+  background-color: rgba(210, 105, 30, 0.1);
+}
+
+/* Title Styling */
+.modal-content h2 {
+  color: #8B4513;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.modal-content h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #d2691e, #a0522d);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 25px 20px;
+    margin: 10% auto;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .form-group input {
+    padding: 12px 15px;
+  }
+  
+  .btnn {
+    padding: 14px;
+  }
+}
+
+/* Update your existing .btn styles with these */
+.btn {
+  display: inline-block;
+  background-color: #d2691e; /* Chocolate orange */
+  color: white;
+  padding: 12px 28px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: none;
+  font-family: "Parastoo", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+  position: relative;
+  overflow: hidden;
+  margin-left: 15%;
+}
+
+/* Hover state */
+.btn:hover {
+  background-color: #a0522d; /* Darker brown */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(139, 69, 19, 0.3);
+  color: #fff;
+}
+
+/* Active/click state */
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+/* Optional: Add a subtle shine effect */
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+      to bottom right,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.2) 50%,
+      rgba(255,255,255,0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.3s ease;
+}
+
+.btn:hover::after {
+  left: 100%;
+}
+
+/* If you want to make it stand out more, add this glow effect */
+.btn.glow {
+  animation: pulse 2s infinite;
+}
+
+/* Add this to your existing button styles */
+.btn-container {
+    text-align: right;  /* For block-level containers */
+    margin-top: 20px;   /* Maintain your existing margin */
+}
+
+/* OR if you want to float the button */
+.btn-right {
+    float: right;
+    clear: both;       /* Prevents floating issues */
+    margin-top: 20px;  /* Maintain your spacing */
+}
+
+
+
+@keyframes modalopen {
+  from {opacity: 0; transform: translateY(-50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #444;
+  padding-bottom: 30px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffce00;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Space between icons */
+}
+
+.social-icons img {
+  width: 32px; /* Slightly larger size */
+  height: 32px;
+  border-radius: 6px; /* Subtle rounding */
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Slight grow on hover */
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
